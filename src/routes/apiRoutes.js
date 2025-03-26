@@ -6,13 +6,13 @@ const reservaController = require('../controllers/controllerReserva');
 
 //Rotas Usuario
 router.post('/usuario', controllerCadastro.createUser);
-router.get('/usuario', controllerCadastro.getAllUsers);
+router.get('/usuarios', controllerCadastro.getAllUsers);
 router.put('/usuario', controllerCadastro.updateUser);
 router.delete('/usuario/:id', controllerCadastro.deleteUser);
 router.post('/login', controllerCadastro.loginUser);
 
 router.post('/sala', controllerSala.createSala);
-router.get('/sala', controllerSala.getAllSalas);
+router.get('/salas', controllerSala.getAllSalas);
 router.put('/sala', controllerSala.updateSala);
 router.delete('/sala/:id', controllerSala.deleteSala);
 
