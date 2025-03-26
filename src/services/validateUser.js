@@ -4,7 +4,7 @@ module.exports = function validateUser({cpf, email, senha, nome}){
         return{error: "Todos os campos devem ser preenchidos"};
     }
     if(isNaN(cpf)||cpf.length !==11){
-        return {erro:"CPF inválido, Deve conter 11 dígitos numéricos"}
+        return {error:"CPF inválido, Deve conter 11 dígitos numéricos"}
     }
     if(!email.includes("@")){
         return{error:"Email inválido. Deve conter @"};
