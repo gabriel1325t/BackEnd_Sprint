@@ -1,6 +1,6 @@
 const connect = require("../db/connect");
 const validateSala = require("../services/validateSala");
-module.exports = class classroomController {
+module.exports = class controllerSala {
   static async createSala(req, res) {
     const { numero, descricao, capacidade } = req.body;
 
