@@ -1,7 +1,7 @@
 const connect = require("../db/connect");
 const validateReserva = require("../services/validateReserva");
 
-module.exports = class AgendamentoController {
+module.exports = class controllerReserva {
   // CREATE RESERVA
   static async createReservas(req, res) {
     // Corpos da requisição

@@ -3,7 +3,7 @@ const validateUser = require("../services/validateUser");
 const validateCpf = require("../services/validateCpf");
 const validateLogin = require("../services/validateLogin");
 
-module.exports = class userController {
+module.exports = class controllerUsuario {
   static async createUser(req, res) {
     const { cpf, email, nome, senha } = req.body;
 
